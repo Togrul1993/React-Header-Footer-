@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&display=swap');
+$bgcolor:rgba(205, 217, 222,1.0);
+$txtcolor:rgba(245, 246, 250,1.0);
+$bgLightGrey:rgba(220, 221, 225,1.0);
+$bgcolor-2:rgba(39, 60, 117,1);
+
+
+
+*{
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+body{
+	box-sizing: border-box;
+}
+
+/* == Navbar Style start*/
+.euro-header{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: $bgcolor;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+
+	.euro-title{
+		position: relative;
+		font-weight: 900;
+		font-size: 60px;
+		height: 100px;
+		padding: 15px;
+		top: 190px;
+		color: $bgcolor-2;
+		background: #cdd9de;
+		box-shadow:  5px 5px 10px #aeb8bd,
+             		-5px -5px 10px #ecfaff;
+	}
+
+	.header_image_2{
+		position: relative;
+		max-width: 500px;
+		max-height: 350px;
+		top: 100px;
+		background: #cdd9de;
+		box-shadow:  5px 5px 10px #aeb8bd,
+   				-5px -5px 10px #ecfaff;
+	}
+}
+
+/* == Header Style end*/
+
+
+
+@media (max-width:998px){
+	.euro-header{
+		height: 500px;
+		.euro-title{
+			position: relative;
+			font-weight: 900;
+			font-size: 40px;
+			height: 70px;
+			padding: 10px;
+			
+		}
+
+		.header_image_2{
+			max-width: 400px;
+			max-height: 300px;
+		}
+	}
+}
+
+
+
+@media (max-width:750px){
+	.euro-header{
+		height: 400px;
+		.euro-title{
+			position: relative;
+			font-weight: 900;
+			font-size: 30px;
+			height: 60px;
+			padding: 10px;
+			
+		}
+
+		.header_image_2{
+			position: relative;
+			top: 100px;
+			max-width: 300px;
+			max-height: 200px;
+		}
+	}
+}
+
+
+
+@media (max-width:530px){
+		.euro-header{
+			height: auto;
+			flex-direction: column;
+			
+		
+
+			.euro-title{
+				position: relative;
+				font-weight: 900;
+				font-size: 30px;
+				width: 250px;
+				top: 150px;
+				margin: auto;
+				margin-bottom: 70px;
+				height: 60px;
+				padding: 10px;
+			}
+			.header_image_2{
+				margin: auto;
+				margin-bottom: 180px;
+			}
+		}
+}
+
+

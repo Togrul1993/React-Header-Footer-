@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&display=swap');
+
+$bgcolor:rgba(205, 217, 222,1.0);
+$txtcolor:rgba(245, 246, 250,1.0);
+$bgLightGrey:rgba(220, 221, 225,1.0);
+$bgcolor-2:rgba(39, 60, 117,1);
+
+body{
+	overflow-x: hidden;
+}
+
+.euro-footer{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 60px 80px;
+	background-color: $bgcolor;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	overflow: hidden;
+
+	&::before{
+		content: "";
+		width: 300px;
+		height: 300px;
+		background: rgba( 39, 60, 117,0.2 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 6.0px );
+		border-radius: 10px;
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
+		position: absolute;
+		top: -45px;
+		right: -90px;
+		border-radius: 50%;
+	}
+
+	&::after{
+		content: "";
+		width: 300px;
+		height: 300px;
+		background: rgba( 39, 60, 117,0.2 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 6.0px );
+		border-radius: 10px;
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
+		position: absolute;
+		bottom: -45px;
+		left: -90px;
+		border-radius: 50%;
+	}
+
+	.about-link-share{
+		position: relative;
+		width: 300px;
+		height: 400px;
+		display: flex;
+		flex-flow: column nowrap;
+		
+		color: $bgcolor-2;
+		font-weight: 600;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		background: linear-gradient(145deg, #dbe8ee, #b9c3c8);
+		box-shadow:  5px 5px 10px #aeb8bd,
+             			-5px -5px 10px #ecfaff;
+		padding: 25px;
+		z-index: 15;
+
+
+		&::before{
+			content: '';
+			position: absolute;
+			width: 280px;
+			height: 380px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: #cdd9de;
+			box-shadow: inset 5px 5px 10px #aeb8bd,
+            	inset -5px -5px 10px #ecfaff;
+			z-index: 14;
+		}
+
+		h6{
+			font-weight: 900;
+			height: 50px;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 25px;
+			z-index: 20;
+		}
+
+		p{
+			height: 130px;
+			padding: 3px 3px;
+			overflow: hidden;
+			padding-top: 10px;
+			text-align: justify;
+			font-size: 18px;
+			z-index: 20;
+		}
+
+		span{
+			z-index: 20;
+			height: 30px;
+			margin-bottom: 5px;
+
+			a{
+				margin-right: 5px;
+
+				i{
+					color: red;
+					font-size: 20px;
+					
+				}
+			}
+			
+			
+			
+			
+			
+		}
+
+		.link-share{
+			position: relative;
+			display: flex;
+			flex-flow: row nowrap;
+			margin-top: 30px;
+			justify-content: space-around;
+			height: 60px;
+			align-items: center;
+			text-align: center;
+			z-index: 20;
+
+
+			i{
+				position: relative;
+				padding: 5px;
+				padding-left: 8px;
+				display: flex;
+				align-self: center;
+				text-align: center;
+				width: 35px;
+				height: 35px;
+				font-size: 20px;
+				
+				cursor: pointer;
+				background: #cdd9de;
+				box-shadow:  5px 5px 10px #aeb8bd,
+							-5px -5px 10px #ecfaff;
+
+				&:hover{
+					color: red;
+					background: #cdd9de;
+					box-shadow: inset 5px 5px 10px #aeb8bd,
+						inset -5px -5px 10px #ecfaff;
+				}
+			}
+		}
+	}
+
+	.AdTypes{
+		position: relative;
+		width: 300px;
+		height: 400px;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-around;
+		color: $bgcolor-2;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		background: linear-gradient(145deg, #dbe8ee, #b9c3c8);
+		box-shadow:  5px 5px 10px #aeb8bd,
+		   			-5px -5px 10px #ecfaff;
+		padding: 25px;
+		padding-top: 10px;
+		
+
+
+		&::before{
+			content: '';
+			position: absolute;
+			width: 280px;
+			height: 380px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: #cdd9de;
+			box-shadow: inset 5px 5px 10px #aeb8bd,
+		  	inset -5px -5px 10px #ecfaff;
+			
+		}
+
+		h6{
+			font-weight: 900;
+			height: 30px;
+			padding-top: 5px;
+			text-align: center;
+			font-size: 25px;
+			font-weight: 900;
+			z-index: 20;
+		}
+
+		a{
+			text-decoration: none;
+			color: $bgcolor-2;
+			font-weight: 600;
+			text-align: center;
+			padding: 5px;
+			background: #cdd9de;
+			box-shadow:  5px 5px 10px #aeb8bd,
+					-5px -5px 10px #ecfaff;
+			z-index: 16;
+			
+			&:hover{
+				color: red;
+				background: #cdd9de;
+				box-shadow: inset 5px 5px 10px #aeb8bd,
+							inset -5px -5px 10px #ecfaff;
+			}
+		}
+	}
+
+	.form{
+		position: relative;
+		width: 300px;
+		height: 400px;
+		margin-bottom: 15px;
+		margin-right: 15px;
+		color: $bgcolor-2;
+		background: linear-gradient(145deg, #dbe8ee, #b9c3c8);
+		box-shadow:  5px 5px 10px #aeb8bd,
+		   			-5px -5px 10px #ecfaff;
+		padding: 25px;
+		z-index: 16;
+		
+
+		&::before{
+			content: '';
+			position: absolute;
+			width: 280px;
+			height: 380px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			background: #cdd9de;
+			box-shadow: inset 5px 5px 10px #aeb8bd,
+		  	inset -5px -5px 10px #ecfaff;
+			
+		}
+
+
+		h6{
+			position: relative;
+			font-weight: 900;
+			height: 50px;
+			padding-top: 10px;
+			text-align: center;
+			font-size: 25px;
+			margin-bottom: 15px;
+			z-index: 20;
+		}
+
+		input{
+			position: relative;
+			z-index: 20;
+			width: 100%;
+			margin-bottom: 10px;
+			outline: none;
+			padding: 3px;
+			color: $bgcolor-2;
+			border: none;
+			font-weight: 600;
+			background: #cdd9de;
+			box-shadow: inset 5px 5px 10px #aeb8bd,
+            			inset -5px -5px 10px #ecfaff;
+		}
+
+		textarea{
+			position: relative;
+			width: 100%;
+			padding: 3px;
+			outline: none;
+			z-index: 20;
+			color: $bgcolor-2;
+			border: none;
+			font-weight: 600;
+			background: #cdd9de;
+			box-shadow: inset 5px 5px 10px #aeb8bd,
+            			inset -5px -5px 10px #ecfaff;
+		}
+
+		button{
+			width: 100%;
+			position: relative;
+			margin-top: 10px;
+			border: none;
+			font-weight: 600;
+			padding: 5px;
+			color: $bgcolor-2;
+			background: #cdd9de;
+			box-shadow:  5px 5px 10px #aeb8bd,
+             			-5px -5px 10px #ecfaff;
+			z-index: 20;
+
+
+			&:hover{
+				color: red;
+				background: #cdd9de;
+				box-shadow: inset 5px 5px 10px #aeb8bd,
+     		  		inset -5px -5px 10px #ecfaff;
+			}
+		}
+	}
+
+}
+
+
+@media (max-width:794px){
+	.euro-footer{
+		justify-content: center;
+	}
+}
+
+@media (max-width:530px){
+	.euro-footer{
+		padding: 30px 5px;
+		justify-content: center;
+	}
+}
